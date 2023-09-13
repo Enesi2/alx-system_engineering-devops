@@ -1,1 +1,1 @@
-0x00-shell_basics
+this is the project directory
