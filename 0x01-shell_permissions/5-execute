@@ -1,0 +1,2 @@
+#!/bin/bash
+[ -f "hello" ] && chmod u+x hello
