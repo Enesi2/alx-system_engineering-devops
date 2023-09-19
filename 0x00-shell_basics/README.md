@@ -1,1 +1,3 @@
+0x00-shell_basics
 this is the project directory
+c4402aa6e63468bab82b87a0048634040661473e
