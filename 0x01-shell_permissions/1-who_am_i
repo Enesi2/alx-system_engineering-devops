@@ -1,6 +1,2 @@
 #!/bin/bash
-
-# Get and print the effective username
-current_user=$(whoami)
-echo "Current user is: $current_user"
-
+whoami
