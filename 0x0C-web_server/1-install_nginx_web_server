@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# Install nginx and print out the string "Hello World!"
+# install nginx web server with fw requirements and default home page
+sudo apt update -y
 
-sudo apt-get -y update
-sudo apt-get -y install nginx
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
-sudo service nginx start
+sudo apt install nginx -y
+
+echo 'Hello World!' | sudo tee /var/www/html/index.nginx-debian.html
+
+sudo service nginx restart
