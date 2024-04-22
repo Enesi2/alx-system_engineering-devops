@@ -1,0 +1,31 @@
+**Title: Understanding the Journey of a URL: From Typing to Rendering**
+
+**Introduction:**
+In the age of the internet, we often take for granted the complex series of events that occur behind the scenes when we type a URL into our browser's address bar and hit Enter. From DNS resolution to the rendering of a web page, numerous components come into play to deliver the desired content to our screens. In this blog post, we'll delve into each step of this journey and unravel the intricacies of the web stack.
+
+**1. DNS Request:**
+The journey begins with a Domain Name System (DNS) request. When we type a URL like https://www.google.com, our browser sends a DNS query to a DNS resolver, asking for the IP address associated with the domain name. The resolver then looks up this information in its cache or recursively queries other DNS servers until it finds the IP address of the server hosting the website.
+
+**2. TCP/IP:**
+Once the IP address is obtained, the browser establishes a Transmission Control Protocol (TCP) connection with the server using the Internet Protocol (IP). TCP ensures reliable communication between the client (browser) and the server by breaking data into packets, ensuring their delivery, and reassembling them in the correct order at the destination.
+
+**3. Firewall:**
+Before data can travel across the network, it may encounter a firewall—a security barrier designed to monitor and control incoming and outgoing network traffic based on predetermined security rules. The firewall inspects the packets to determine if they meet the specified criteria and either allows or blocks them accordingly.
+
+**4. HTTPS/SSL:**
+In modern web browsing, security is paramount. Hypertext Transfer Protocol Secure (HTTPS) encrypts the data exchanged between the browser and the server, protecting it from eavesdropping and tampering. Secure Sockets Layer (SSL) or its successor, Transport Layer Security (TLS), establishes this encrypted connection, authenticates the server's identity, and ensures the integrity and confidentiality of the transmitted data.
+
+**5. Load-Balancer:**
+High-traffic websites often employ load balancers to distribute incoming requests across multiple servers, ensuring optimal performance and reliability. The load balancer receives incoming requests, evaluates server health and performance metrics, and forwards the requests to the most suitable server in the backend pool.
+
+**6. Web Server:**
+Upon receiving the request, the web server—such as Apache, Nginx, or Microsoft IIS—processes the request, retrieves the requested resources (HTML, CSS, JavaScript, images, etc.), and constructs an HTTP response. The response includes the requested content along with relevant metadata such as headers and status codes.
+
+**7. Application Server:**
+In cases where dynamic content is involved—such as when interacting with databases or executing server-side code—an application server comes into play. The application server executes the necessary logic, interacts with databases or external services, generates dynamic content, and returns the result to the web server for inclusion in the response.
+
+**8. Database:**
+Many websites rely on databases to store and retrieve data dynamically. The application server interacts with the database—such as MySQL, PostgreSQL, MongoDB, or others—to perform operations like reading or writing data, executing queries, and returning the results to the application server for processing.
+
+**Conclusion:**
+The journey of a URL from typing to rendering is a fascinating voyage through the intricacies of the web stack. From DNS resolution and TCP/IP connections to HTTPS encryption and load balancing, each step plays a crucial role in delivering the desired content to the user's browser. By understanding these components and their interactions, we gain insight into the inner workings of the internet and the technologies that power our digital experiences.
